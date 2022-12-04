@@ -31,6 +31,7 @@ pauliRegex = re.compile(r'[XYZ]\d+')
 qubitRegex = re.compile(r'\d+')
 package_directory = os.path.dirname(os.path.abspath(__file__))
 
+# define the geometry of molecules
 H2 = [['H', [0., 0, 0]],['H', [0, 0, -1.5]]]
 He2 = [['He', [0., 0, 0]],['He', [0, 0, 2.6740000]]]
 HF = [['F', [0., 0, 0]],['H', [0, 0, 0.9153800]]]
@@ -55,7 +56,7 @@ NaCl = [['Na', [0., -1.5, -1.5]],['Cl', [1.5, -1.5, -1.5]]]
 KOH = [['K', [3.4030, 0.2500, 0.0]],['O', [2.5369, -0.2500, -1.5]],['H', [2.0,0.06,0.0]]]
 FeO = [['Fe', [0., 0, 0]],['O', [0, 0, -1.5]]]
 
-
+# one can load calculated Hamiltonian operators from saved pickle files
 def load_oplist(name, benchmark='uccsd'):
     if benchmark == 'molecule':
         fth = os.path.join(package_directory, 'data', name + '.pickle')
@@ -80,6 +81,7 @@ def load_oplist(name, benchmark='uccsd'):
             oplist.append(i.ps)
         return oplist
 
+# calculate molecule's Hamiltonian operators utilizing module from qiskit_nature
 def get_qubit_op(geo, molecule_charge, molecule_multiplicity):
     molecule = Molecule(geometry=geo, charge=molecule_charge, multiplicity=molecule_multiplicity)
     driver = ElectronicStructureMoleculeDriver(
@@ -95,6 +97,7 @@ def get_qubit_op(geo, molecule_charge, molecule_multiplicity):
 
     return qubit_op
 
+# calculated Hamiltonian operators of Fermi-Hubbard model
 def gene_FermiHubbard_oplist(rows, cols):
     qubit_converter = QubitConverter(mapper=BravyiKitaevMapper())
     square_lattice = SquareLattice(rows=rows, cols=cols, boundary_condition=BoundaryCondition.PERIODIC)
