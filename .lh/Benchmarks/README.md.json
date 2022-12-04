@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1670143771396,
@@ -16,6 +16,10 @@
                 {
                     "date": 1670143889520,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-Use `HamiltonianGenerator.py` script to generate Hamiltonian operators, you can also \n\\ No newline at end of file\n+Use `HamiltonianGenerator.py` script to generate Hamiltonian operators, you can also load calculated Hamiltonians from pickle files in \"/data/\" folder.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1670144611382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n+# Usage\r\n Use `HamiltonianGenerator.py` script to generate Hamiltonian operators, you can also load calculated Hamiltonians from pickle files in \"/data/\" folder.\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1670143771396,
