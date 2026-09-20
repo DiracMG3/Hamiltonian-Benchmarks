@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software or its results in academic work, please cite the paper below."
+authors:
+  - family-names: "Hu"
+    given-names: "Yi"
+title: "Greedy algorithm based circuit optimization for near-term quantum simulation"
+license: Apache-2.0
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Hu"
+      given-names: "Yi"
+    - family-names: "Meng"
+      given-names: "Fanxu"
+    - family-names: "Wang"
+      given-names: "Xiaojun"
+    - family-names: "Luan"
+      given-names: "Tian"
+    - family-names: "Fu"
+      given-names: "Yulong"
+    - family-names: "Zhang"
+      given-names: "Zaichen"
+    - family-names: "Zhang"
+      given-names: "Xianchao"
+    - family-names: "Yu"
+      given-names: "Xutao"
+  title: "Greedy algorithm based circuit optimization for near-term quantum simulation"
+  journal: "Quantum Science and Technology"
+  volume: "7"
+  issue: "4"
+  year: 2022
+  start: "045001"
+  doi: "10.1088/2058-9565/ac796b"
