@@ -34,6 +34,23 @@ OpenFermion is distributed under the **Apache License 2.0**:
 
 Adapted portions remain subject to the upstream Apache-2.0 terms and attribution requirements.
 
+
+## Qiskit Nature-derived VQE example
+
+`demovqe.py` contains code adapted from the Qiskit Nature ground-state solver tutorial, including the H2 molecular setup, `ElectronicStructureMoleculeDriver` workflow, `VQEUCCFactory` example, and `GroundStateEigensolver` usage.
+
+A historical upstream version predating this repository's copy is:
+
+- Upstream project: **Qiskit Nature**
+- Upstream file: `docs/tutorials/03_ground_state_solvers.ipynb`
+- Historical revision: `ff222f77f78928a701268732bd1013fa9affc4cd`
+- Source: https://github.com/qiskit-community/qiskit-nature/blob/ff222f77f78928a701268732bd1013fa9affc4cd/docs/tutorials/03_ground_state_solvers.ipynb
+- Upstream copyright: Copyright 2017 IBM and its contributors
+- Upstream license: **Apache License 2.0**
+- License source: https://github.com/qiskit-community/qiskit-nature/blob/ff222f77f78928a701268732bd1013fa9affc4cd/LICENSE.txt
+
+The adapted upstream portions of `demovqe.py` remain subject to the Qiskit Nature Apache-2.0 terms. Project-specific modifications in this repository are also made available under Apache License 2.0.
+
 ## Project-original material
 
 Other project-specific benchmark-generation, processing, and organization code authored for this repository is licensed under the repository's Apache License 2.0 unless otherwise noted.
