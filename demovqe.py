@@ -1,3 +1,11 @@
+# Provenance notice:
+# Portions of this file are adapted from Qiskit Nature's "Ground state solvers" tutorial:
+# https://github.com/qiskit-community/qiskit-nature/blob/ff222f77f78928a701268732bd1013fa9affc4cd/docs/tutorials/03_ground_state_solvers.ipynb
+# Upstream copyright: Copyright 2017 IBM and its contributors
+# Upstream license: Apache License 2.0
+# Project-specific modifications are licensed under this repository's Apache License 2.0.
+# See THIRD_PARTY_NOTICES.md for details.
+
 from qiskit import Aer
 from qiskit_nature.drivers import UnitsType, Molecule
 from qiskit_nature.drivers.second_quantization import (
